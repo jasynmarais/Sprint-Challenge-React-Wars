@@ -37,6 +37,10 @@ export const Character = ({ data }) => {
         <CharacterCard>
             <h2>{data.name}</h2>
             <p>
+            <p>
+             <span>DOB: </span>
+                {data.birth_year}
+            </p>
             <span>Hair Color: </span>
              {data.hair_color}
             </p>
@@ -44,19 +48,18 @@ export const Character = ({ data }) => {
             <span>Eye Color: {data.eye_color}</span>
             </p>
             <p>
+            <span>Skin Color: {data.skin_color}</span>
+            </p>
+            <p>
             <span>Gender: {data.gender}</span>
             </p>
             <p>
-            <span>Weight: </span>
+            <span>Mass: </span>
               {data.mass} Kg
             </p>
             <p>
             <span>Height: </span>
                 {data.height} cm
-            </p>
-             <p>
-             <span>DOB: </span>
-                {data.birth_year}
             </p>
         </CharacterCard>
     );
