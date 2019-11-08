@@ -30,7 +30,7 @@ React is a JavaScript library for building User Interfaces. React solves the pro
 
 - [X] What does it mean to _think_ in react?
 
-Thinking in React means thinking about the components hierarchy, what state your app is going to have, and wher eit should live. It also means thinking about what components need data passed to them from props.
+Thinking in React means thinking about the components hierarchy, what state your app is going to have, and where it should live. It also means thinking about what components need data passed to them from props.
 
 - [X] Describe state.
 
