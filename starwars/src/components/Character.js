@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CharacterCard = styled.div`
-    width: 500px;
+    width: 450px;
     padding: 1.1rem;
     margin: 1rem 0;
     background: #f0db4f;
     border-radius: 11px;
-    box-shadow: 3px 3px 4px #323330;
+    box-shadow: 3px 5px 10px #323330;
     transition: ease-in-out 0.2s;
 
     &:hover {
@@ -23,6 +23,7 @@ const CharacterCard = styled.div`
     h2 {
         color: #323330;
         font-size: 2rem;
+        text-decoration: underline;
     }
 
     p {
@@ -38,6 +39,12 @@ export const Character = ({ data }) => {
             <p>
             <span>Hair Color: </span>
              {data.hair_color}
+            </p>
+            <p>
+            <span>Eye Color: {data.eye_color}</span>
+            </p>
+            <p>
+            <span>Gender: {data.gender}</span>
             </p>
             <p>
             <span>Weight: </span>
