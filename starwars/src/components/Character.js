@@ -30,6 +30,10 @@ const CharacterCard = styled.div`
         font-size: 1.4rem;
         color: #323330;
     }
+
+    span {
+        font-weight: bold;
+    }
 `;
 
 export const Character = ({ data }) => {
@@ -38,28 +42,31 @@ export const Character = ({ data }) => {
             <h2>{data.name}</h2>
             <p>
             <p>
-             <span>DOB: </span>
-                {data.birth_year}
+            <span>DOB: </span>
+            {data.birth_year}
             </p>
             <span>Hair Color: </span>
-             {data.hair_color}
+            {data.hair_color}
             </p>
             <p>
-            <span>Eye Color: {data.eye_color}</span>
+            <span>Eye Color: </span>
+            {data.eye_color}
             </p>
             <p>
-            <span>Skin Color: {data.skin_color}</span>
+            <span>Skin Color: </span>
+            {data.skin_color}
             </p>
             <p>
-            <span>Gender: {data.gender}</span>
+            <span>Gender: </span>
+            {data.gender}
             </p>
             <p>
             <span>Mass: </span>
-              {data.mass} Kg
+            {data.mass} kg
             </p>
             <p>
             <span>Height: </span>
-                {data.height} cm
+            {data.height} cm
             </p>
         </CharacterCard>
     );

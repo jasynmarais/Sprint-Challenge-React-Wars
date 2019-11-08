@@ -4,7 +4,7 @@ import './App.css';
 import { CharacterList } from './components/CharacterList';
 
 const App = () => {
-  const [characters, setCharacters] = useState([]);
+  const [characters, setCharacters] = useState(null);
 
   useEffect(() => {
     axios
@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <CharacterList data={characters} />
+      {characters ? (<CharacterList data={characters} />) : (<p>loading...</p>)}
     </div>
   );
 };
